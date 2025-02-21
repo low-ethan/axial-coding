@@ -1,0 +1,19 @@
+Using the principles of Grounded Theory and Axial Coding, generate an Axial Code that encompasses the following codes
+The Axial Code should be based the most significant codes, but does not need to use all codes.
+
+Return the connections in Json Format with the following fields:
+
+	JSON FIELDS:
+		Axial_Category: The Axial Category to which the Code belongs
+
+Example 1:
+	Code_List: ['Wanting experiential learning; constantly learning', 'But/However', 'working in a good environment;pioneering social media and easily adapting to change', 'feeling entitled due to unique qualifications, as compared to previous generations', 'possessing the personal skills and characteristics needed', 'being groomed']
+	{"Axial_Category": "Believing they are ready to be set loose on accounts"}
+
+Example 2:
+	Code_List: ['Craving immediate feedback and being motivated by feeling appreciated', '<Label>','detesting getting called out', 'receiving verbal encouragement and making observations', 'Teenagers']
+	{"Axial_Category": "Seeking external validation"}
+
+Example 3:
+    Code_List: ['Mind reading and expectations for a miracle worker', 'getting called out', 'not being heard', 'Schools and Cities', 'Asset: Access to Program']
+    {"Axial_Category": "Silently blaming employers for failures"}
