@@ -51,7 +51,7 @@ def compile_to_one(df_list):
 
 
 def main():
-    dir_list = os.listdir('Depreciated-interview/orig_doc/transcripts')
+    dir_list = os.listdir('orig_doc/transcripts')
     for file in dir_list:
         print(file)
         reformat_transcript(file)
