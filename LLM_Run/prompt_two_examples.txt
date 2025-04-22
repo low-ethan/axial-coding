@@ -1,0 +1,72 @@
+Use the following interview question/responses as examples of open coding to fill in the JSON list for the final interview question/response. Include no other text in your response except for the JSON Output, as the output will be directly read by a json decoder.
+There should be no more than 1 code per sentence, but at least 1 code per paragraph.
+In Vivo codes are codes that use the actual words or phrases spoken by the participant. They are more valuable and are preferred where possible. You will receive a bonus point for each In Vivo code that is correct.
+
+	JSON FIELDS:
+		Original_Text: The original text spoken by the interviewed participant
+		Code: The extracted code following the principles of Open Coding.
+		In_Vivo: Whether the code is quoted directly from the text
+
+Example 1:
+Interviewer: How do you handle work-life balance?
+Answer: I try to keep a balance between my work and personal life, but I'm always checking work emails at home. It feels like I'm never really off the clock, and it's annoyingly hard to switch off, you know? Sometimes I feel like my mind is still at work even when I'm with family. I do try to set clear boundaries, though. For instance, like no phone during dinner. But it's a struggle to stick to these boundaries consistently.
+
+JSON OUTPUT LIST:
+[{"Original_Text": "I'm always checking work emails at home.", "Code": "Work Intrusion", "In_Vivo": "False"},
+{"Original_Text": "it's annoyingly hard to switch off, you know?", "Code": "Difficulty Disconnecting", "In_Vivo": "False"},
+{"Original_Text": "I do try to set clear boundaries", "Code": "Clear Boundaries", "In_Vivo": "True"},
+{"Original_Text": "like no phone during dinner.", "Code": "Specific Boundary Tactics", "Topic": "In_Vivo": "False"}]
+
+
+Example 2:
+Interviewer:  Q4_Nature
+Answer: I’ve always felt a strong connection to nature. Whenever I’m stressed, I head to the park to clear my mind. It’s like a sanctuary for me. The sounds, the smells, everything about it helps me to reset and find balance. Even a short walk in the park can make a big difference in how I feel for the rest of the day.
+
+
+JSON OUTPUT LIST:
+[{"Original_Text": "I’ve always felt a strong connection to nature.", "Code": "Connection to Nature", "In_Vivo": "True"},
+{"Original_Text": "Whenever I’m stressed, I head to the park to clear my mind.", "Code": "Stress Relief Through Nature", "In_Vivo": "False"},
+{"Original_Text": "It’s like a sanctuary for me", "Code": "Nature as a Sanctuary", "In_Vivo": "False"},
+{"Original_Text": "The sounds, the smells, everything about it helps me to reset and find balance.", "Code": "Sensory Experience in Nature", "In_Vivo": "False"},
+{"Original_Text": "Even a short walk in the park can make a big difference in how I feel for the rest of the day.", "Code": "Positive Impact of Nature on Mood", "In_Vivo": "False"}]
+
+
+Example 3:
+Interviewer: Do teens experiment a lot with drugs?
+Respondent: Most just try a few. It depends on where you are and how accessible they are. Most don’t really get into in hard-core. A lot of teens are into pot, hash, a little organic staff. It depends on what phase of life you are at. It’s kind of progressive. You start off with the basic drugs like pot. Then you go on to try more intense drugs like hallucinogens.
+
+JSON OUTPUT LIST:
+[{"Original_Text": "Most just try a few.", "Code": "Limited Experimenting", "In_Vivo": "False"},
+{"Original_Text": "It depends on where you are and how accessible they are.", "Code": "Degree of Accessibility", "In_Vivo": "False"},
+{"Original_Text": "Most don’t really get into in hard-core", "Code": "Limited Experimenting", "In_Vivo": "False"},
+{"Original_Text": "A lot of teens are into pot, hash, a little organic staff.", "Code": "Soft Core Drug Types", "In_Vivo": "False"},
+{"Original_Text": "It depends on what phase of life you are at.", "Code": "Personal Developmental Stage", "In_Vivo": "False"},
+{"Original_Text": "It’s kind of progressive.", "Code": "Progressive Using", "In_Vivo": "False"},
+{"Original_Text": "You start off with the basic drugs like pot.", "Code": "Basic Drugs", "In_Vivo": "True"},
+{"Original_Text": "Then you go on to try more intense drugs like hallucinogens.", "Code": "Intense Drugs", "In_Vivo": "True"}]
+
+
+
+
+Use the following interview question/responses as examples of open coding to fill in the JSON list for the final interview question/response.
+Include no other text in your response except for the JSON Output, as the output will be directly read by a JSON decoder.
+There should be no more than 1 code per sentence, but at least 1 code per paragraph.
+
+	JSON FIELDS:
+		Original_Text: The original text spoken by the interviewed participant
+		Code: The extracted code following the principles of Open Coding.
+
+Example 1:
+Interviewer: How do you handle work-life balance?
+Answer: I try to keep a balance between my work and personal life, but I'm always checking work emails at home. It feels like I'm never really off the clock, and it's annoyingly hard to switch off, you know? Sometimes I feel like my mind is still at work even when I'm with family. I do try to set clear boundaries, though. For instance, like no phone during dinner. But it's a struggle to stick to these boundaries consistently.
+
+JSON OUTPUT LIST:
+[{"Original_Text": "I'm always checking work emails at home.", "Code": "Work Intrusion"},
+{"Original_Text": "it's annoyingly hard to switch off, you know?", "Code": "Difficulty Disconnecting"},
+{"Original_Text": "I do try to set clear boundaries", "Code": "Clear Boundaries"},
+{"Original_Text": "like no phone during dinner.", "Code": "Specific Boundary Tactics"}]
+
+
+Example 2:
+Interviewer:  Q4_Nature
+...
